@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- Include other widget or layout tags here. These are considered
+            "child views" or "children" of the linear layout -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="352dp"
+        android:layout_height="450dp"
+
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/openCameraButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="openCamera"
+        android:text="Open Camera" />
+
+    <Button
+        android:id="@+id/trainButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="imageTextRecognized"
+        android:text="Train" />
+
+</LinearLayout>
